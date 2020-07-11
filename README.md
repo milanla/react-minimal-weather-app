@@ -1,7 +1,9 @@
 ![Minimalistic Weather App Preview](./src/img/screenshot.gif)
 
 Designed by [Charlie Taminian](https://github.com/ctaminian)
+
 Images from [Unsplash](https://unsplash.com/)
+
 Icons fron [Freepik](http://www.freepik.com/) and [Flaticon](www.flaticon.com)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
