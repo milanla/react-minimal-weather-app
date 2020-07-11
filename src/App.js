@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Info from './components/Info/Info'
+import Card from './components/Card/Card';
 
-function App() {
+const App = () => {
+  let [tempUnit, setTempUnit] = useState('F');
+  let [cities, setCities] = useState([]);
+
+  useEffect(() => {
+    (async function fetchData() {
+      const response = await fetch(`http://api.openweathermap.org/data/2.5/group?id=5128581,1609350&units=imperial&appid=${process.env.REACT_APP_WEATHER_API_KEY}`);
+      const data = await response.json()
+      setCities(data.list);
+    })()
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Info 
+        tempUnit={tempUnit} 
+        setTempUnit={() => setTempUnit(tempUnit === 'F' ? 'C' : 'F')} 
+      />
+      <Card city={cities[0]} tempUnit={tempUnit}/>
+      <Card city={cities[1]} tempUnit={tempUnit}/>
+    </main>
   );
 }
 
