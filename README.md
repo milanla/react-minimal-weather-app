@@ -1,10 +1,6 @@
 ![Minimalistic Weather App Preview](./src/img/screenshot.gif)
 
-Designed by [Charlie Taminian](https://github.com/ctaminian)
-
-Images from [Unsplash](https://unsplash.com/)
-
-Icons fron [Freepik](http://www.freepik.com/) and [Flaticon](www.flaticon.com)
+See live site [here](https://react-minimal-weather-app.milanla.vercel.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -74,3 +70,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+Designed by [Charlie Taminian](https://github.com/ctaminian)
+
+Images from [Unsplash](https://unsplash.com/)
+
+Icons fron [Freepik](http://www.freepik.com/) and [Flaticon](www.flaticon.com)
